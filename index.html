@@ -5,29 +5,40 @@
   <title>Picture of a Burger</title>
   
 </head>
-
-<body>
-  <style>
-  img{
+<style>
+  div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 350px;
+    height: 200px;
     margin: auto;
+    padding: 15% 0;
+    align-items: center;
+  }
+    img{
+    left:25;
     transition: opacity 1s ease-in-out;
   }
   img:hover {
     opacity: 0.1;
   }
-  h1{
-     margin: auto;
-     position: absolute;
+  h2{
+     margin: auto 0;
      opacity: 0;
-     top: 100px;
+     position: absolute;
+     transition: opacity 1s ease-in-out;
      transition: opacity 1s ease-in-out;
   }
-  h1:is(img:hover + h1) {
+  h2:is(img:hover + h2) {
     opacity: 1;
   }
   </style>
-  <img id="burger" src="https://t3.ftcdn.net/jpg/06/01/07/12/360_F_601071205_jxLMJzJKNPMh1g5ciDuW32Nj8vO5ltNhn.jpg" alt="it's just a picture of a fucking burger" width="200" height="200">
-  <h1>its just a picture of a fucking burger</h1>
+<body>
+  <div width="300" height="200">
+    <img id="burger" src="https://t3.ftcdn.net/jpg/06/01/07/12/360_F_601071205_jxLMJzJKNPMh1g5ciDuW32Nj8vO5ltNhn.jpg" alt="it's just a picture of a fucking burger" width="300" height="200">
+    <h2>its just a picture of a fucking burger</h2>
+  </div>
 </body>
 
 </html>
